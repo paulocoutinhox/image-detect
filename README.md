@@ -15,7 +15,7 @@ To compile and install:
 
 # Result
 
-![Result](https://github.com/prsolucoes/image-detect/raw/master/extras/images/extras/sample/diff-screen-double.png "Result")
+![Result](https://github.com/prsolucoes/image-detect/raw/master/extras/images/diff-screen-double.png "Result")
 
 # Author WebSite
 
