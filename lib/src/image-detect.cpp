@@ -45,11 +45,10 @@ string IMD::ImageDetect::getResultAsJSON(bool success, string message, vector<IM
 	return result.str();
 }
 
-string IMD::ImageDetect::process(string screenImagePath, string detectImagePath, string outputImagePath)
+string IMD::ImageDetect::process(string screenImagePath, string detectImagePath, string outputImagePath, double thresholdToDetect)
 {
     int matchMethod = CV_TM_CCOEFF_NORMED;
-	double thresholdToDetect = 0.9;
-
+	
     // screen image and detect image
     Mat screenImage = imread(screenImagePath, 1);
     Mat detectImage = imread(detectImagePath, 1);

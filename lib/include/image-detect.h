@@ -19,6 +19,6 @@ namespace IMD
 		public:
 			ImageDetect();
 			string getResultAsJSON(bool success, string message, vector<IMD::DetectedPoint> *detectedPoints);
-			string process(string screenImagePath, string detectImagePath, string outputImagePath);
+			string process(string screenImagePath, string detectImagePath, string outputImagePath, double thresholdToDetect);
 	};
 }

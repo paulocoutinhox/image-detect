@@ -20,9 +20,10 @@ int main(int argc, char *argv[])
 	// process
 	string screenImagePath = argv[1];
     string detectImagePath = argv[2];
-    string outputImagePath = (argc > 3 ? argv[3] : "");
+    string outputImagePath = (argc > 3 ? argv[3] : ""); // can be empty to dont store diff file on disk
+	double thresholdToDetect = 0.9;
 
-	string message = imd->process(screenImagePath, detectImagePath, outputImagePath);
+	string message = imd->process(screenImagePath, detectImagePath, outputImagePath, thresholdToDetect);
 	printf("%s", message.c_str());
 	
 	return EXIT_SUCCESS;

@@ -2,6 +2,10 @@
 
 Detect a minor image over a bigger image, ex: a button inside the phone screenshot and return positions in JSON format.
 
+The result image (diff image) is optional, you can ommit it to only return the result in JSON.  
+
+Thre is a "threshold" param to you specify the level of relevance of the image inside other.  
+
 # Get started
 
 To compile and install:  
@@ -35,9 +39,19 @@ If any problem, like not-found:
 
 You can get the C++ sample program in "main.cpp" file.
 
-# Result
+# Result on double detect sample
 
-![Result](https://github.com/prsolucoes/image-detect/raw/master/extras/images/diff-screen-double.png "Result")
+Image to detect:
+
+![Detect](https://github.com/prsolucoes/image-detect/raw/master/extras/images/detect.png "Detect")
+
+Inside image:
+
+![Screen](https://github.com/prsolucoes/image-detect/raw/master/extras/images/screen-double.png "Screen")
+
+Diff image:
+
+![Diff](https://github.com/prsolucoes/image-detect/raw/master/extras/images/diff-screen-double.png "Diff")
 
 # Author WebSite
 
