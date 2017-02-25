@@ -41,15 +41,15 @@ You can get the C++ sample program in "main.cpp" file.
 
 # Result on double detect sample
 
-Image to detect:
+** Image to detect: ** 
 
 ![Detect](https://github.com/prsolucoes/image-detect/raw/master/extras/images/detect.png "Detect")
 
-Inside image:
+** Inside image: ** 
 
 ![Screen](https://github.com/prsolucoes/image-detect/raw/master/extras/images/screen-double.png "Screen")
 
-Diff image:
+** Diff image: ** 
 
 ![Diff](https://github.com/prsolucoes/image-detect/raw/master/extras/images/diff-screen-double.png "Diff")
 
