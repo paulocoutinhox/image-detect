@@ -44,8 +44,8 @@ run-sample-no-detect:
 	./extras/images/diff.png
 
 build-go-sample:
-	#swig -go -cgo -c++ -intgosize 64 -I${IMAGE_DETECT_HOME}/lib/include go-sample/image-detect.i 
-
+	# swig -go -cgo -c++ -intgosize 64 -I${IMAGE_DETECT_HOME}/lib/include go-sample/image-detect.i 
+	
 	CGO_CFLAGS="-I${IMAGE_DETECT_HOME}/lib/include"; \
 	CGO_LDFLAGS="-L${IMAGE_DETECT_HOME}/build -limage-detect"; \
-	go build go-sample/main.go;
+	go build go-sample/main.go -o go-sample/image-detect
